@@ -91,8 +91,8 @@
         RAISE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans         &trans     &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans         &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans         &a_umlaut  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &o_umlaut      &u_umlaut      &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &e_aigu        &trans         &a_umlaut  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp BACKSLASH  &kp SEMICOLON  &kp COLON  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans         &trans         &trans     &trans
             >;
