@@ -23,6 +23,13 @@
             bindings = <&kp DOUBLE_QUOTES &kp A>;
             label = "A_UMLAUT";
         };
+
+        apostrophe_non_dead_key: apostrophe_non_dead_key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE &kp SPACE>;
+            label = "APOSTROPHE_NON_DEAD_KEY";
+        };
     };
 
     behaviors {
@@ -52,11 +59,11 @@
 
         BASE {
             bindings = <
-&kp ESC                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
-&kp TAB                   &kp W         &kp L         &kp Y         &kp P         &kp B           &kp Z         &kp F         &kp O         &kp U         &kp APOS      &kp ENTER
-&shift_caps LEFT_SHIFT 0  &kp C         &kp R         &kp S         &kp T         &kp G           &kp M         &kp N         &kp E         &kp I         &kp A         &kp RIGHT_SHIFT
-&kp LCTRL                 &kp Q         &kp J         &kp V         &kp D         &kp K           &kp X         &kp H         &kp SLASH     &kp COMMA     &kp DOT       &kp RIGHT_CONTROL
-&kp EQUAL                 &mo 1         &kp SPACE     &kp LEFT_ALT  &kp LBKT                                    &kp RBKT      &mo 3         &kp LEFT_GUI  &mo 2         &kp MINUS
+&kp ESC                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0              &kp BACKSPACE
+&kp TAB                   &kp W         &kp L         &kp Y         &kp P         &kp B           &kp Z         &kp F         &kp O         &kp U         &apostrophe_non_dead_key  &kp ENTER
+&shift_caps LEFT_SHIFT 0  &kp C         &kp R         &kp S         &kp T         &kp G           &kp M         &kp N         &kp E         &kp I         &kp A                     &kp RIGHT_SHIFT
+&kp LCTRL                 &kp Q         &kp J         &kp V         &kp D         &kp K           &kp X         &kp H         &kp SLASH     &kp COMMA     &kp DOT                   &kp RIGHT_CONTROL
+&kp EQUAL                 &mo 1         &kp SPACE     &kp LEFT_ALT  &kp LBKT                                    &kp RBKT      &mo 3         &kp LEFT_GUI  &mo 2                     &kp MINUS
             >;
         };
 
