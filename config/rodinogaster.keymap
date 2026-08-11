@@ -29,7 +29,7 @@
         shift_caps: shift_caps {
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFT_CAPS";
-            bindings = <&kp>, <&test>;
+            bindings = <&kp>, <&td_shift_caps>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -37,11 +37,11 @@
             flavor = "tap-preferred";
         };
 
-        test: test {
+        td_shift_caps: td_shift_caps {
             compatible = "zmk,behavior-tap-dance";
-            label = "TEST";
+            label = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&kp NUMBER_2>, <&kp NUMBER_3>;
+            bindings = <&none>, <&caps_word>;
 
             tapping-term-ms = <250>;
         };
