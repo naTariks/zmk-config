@@ -30,6 +30,27 @@
             bindings = <&kp APOSTROPHE &kp SPACE>;
             label = "APOSTROPHE_NON_DEAD_KEY";
         };
+
+        o_umlaut: o_diacritic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp O>;
+            label = "O_DIACRITIC";
+        };
+
+        u_umlaut: u_diacritic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp U>;
+            label = "U_DIACRITIC";
+        };
+
+        e_aigu: e_aigu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp E>;
+            label = "E_AIGU";
+        };
     };
 
     behaviors {
