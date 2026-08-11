@@ -31,7 +31,7 @@
             label = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&none>, <&kp CAPSLOCK>;
+            bindings = <&none>, <&kt CAPSLOCK>;
         };
 
         shift_caps: shift_caps {
@@ -40,7 +40,7 @@
             bindings = <&kp>, <&td_shift_caps>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
         };
     };
 
